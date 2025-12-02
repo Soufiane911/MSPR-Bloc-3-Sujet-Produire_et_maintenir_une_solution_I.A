@@ -1,6 +1,6 @@
 # 📌 MSPR-Bloc-3-Sujet-Produire_et_maintenir_une_solution_I.A
 📌 README – Projet ObRail Europe (MSPR – Industrialisation & Mise en Production)
-🎯 Objectif du projet
+🎯 **Objectif du projet**
 
 Ce projet s’inscrit dans la certification professionnelle
 RNCP36581 – Développeur en Intelligence Artificielle et Data Science
@@ -22,7 +22,7 @@ Conteneurisation complète avec Docker Compose
 
 La solution doit être reproductible, testée, supervisée, sécurisée et conforme RGPD.
 
-🧰 Technologies utilisées
+🧰 **Technologies utilisées**
 🔙 Backend – Python
 
 Frameworks & bibliothèques :
@@ -48,7 +48,7 @@ Endpoint	Description
 /trajets/{id}	Détails d’un trajet
 /stats/volumes	Statistiques jour/nuit, volumes par opérateur
 /health	État du service (monitoring CI/CD)
-🎨 Frontend – JavaScript / TypeScript
+🎨 **Frontend – JavaScript / TypeScript**
 
 Framework utilisé :
 
@@ -74,7 +74,7 @@ Page Monitoring (latence API, erreurs, disponibilité)
 
 Page Documentation (optionnel)
 
-🗄 Base de données
+🗄 **Base de données**
 
 PostgreSQL (base principale)
 
@@ -82,7 +82,7 @@ Schémas fournis par la MSPR précédente (TPRE512)
 
 Connexion via SQLAlchemy + psycopg2
 
-🐳 Conteneurisation & Orchestration
+🐳 **Conteneurisation & Orchestration**
 
 Docker
 
@@ -99,7 +99,7 @@ L’ensemble doit être démarré via :
 
 docker-compose up --build
 
-⚙️ CI/CD – GitHub Actions
+⚙️ **CI/CD – GitHub Actions**
 
 Le pipeline CI/CD inclut :
 
@@ -123,7 +123,7 @@ Publication des images Docker dans le GitHub Container Registry
 
 Déploiement automatique sur environnement de test
 
-📊 Supervision & Observabilité
+📊 **Supervision & Observabilité**
 
 L’application inclura :
 
@@ -159,8 +159,8 @@ Santé /health
 
 Charge PostgreSQL
 
-🧪 Tests automatisés
-Backend – Pytest
+🧪 **Tests automatisés
+Backend – Pytest**
 
 Tests unitaires (services, modèles, validation)
 
@@ -180,7 +180,7 @@ Page monitoring
 
 Les tests tournent automatiquement dans la CI/CD.
 
-🧱 Architecture (aperçu rapide)
+🧱 **Architecture (aperçu rapide)**
 Diagramme C2 – Conteneurs (Mermaid)
 flowchart LR
     subgraph Frontend["Container Frontend (React + TS)"]
@@ -206,7 +206,7 @@ flowchart LR
     Prometheus --> Postgres
     Grafana --> Prometheus
 
-▶️ Démarrage du projet
+▶️ **Démarrage du projet**
 1) Cloner le dépôt
 git clone https://github.com/…/obrail-mspr.git
 cd obrail-mspr
@@ -246,7 +246,7 @@ Grafana, Prometheus, métriques, intégration logs
 
 Architecture, RGPD, sécurité, pipeline CI/CD, slides
 
-📄 Livrables
+📄 **Livrables**
 
 Application complète via Docker Compose
 
